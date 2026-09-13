@@ -4,7 +4,7 @@ import banner from "../assets/banner-stack.png"
 const Hero = () => {
     return (
         <section className="bg-white">
-            <div className="mx-auto grid min-h-[calc(100vh-64px)] max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-20">
+            <div className="mx-auto grid min-h-[calc(100vh-64px)] max-w-7xl items-center gap-12 px-4 py-8 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-10">
 
                 <div className="order-1">
 

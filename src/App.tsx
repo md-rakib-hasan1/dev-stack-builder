@@ -1,5 +1,6 @@
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
+import TechnologyGrid from "./components/TechnologyGrid"
 
 
 function App() {
@@ -8,6 +9,8 @@ function App() {
     <div>
       <Navbar/>
       <Hero/>
+     
+     <TechnologyGrid/>
 
     </div>
 
