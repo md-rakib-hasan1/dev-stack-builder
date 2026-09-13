@@ -4,7 +4,7 @@ Dev Stack Builder is a technology stack builder website where developers can exp
 
 ## Live Website
 
-
+https://dev-stack-builder-rose.vercel.app
 
 ## Technologies Used
 
@@ -75,6 +75,8 @@ useEffect(() => {
   return () => clearTimeout(timer);
 }, []);
 
+---
+
 ## 5. Why does every item in a .map() list need a unique key prop?
 
 React needs a unique key to identify each item in a list.
@@ -87,6 +89,7 @@ Example:{technologies.map((technology) => (
     technology={technology}
   />
 ))}
+---
 
 ## 6. What is conditional rendering? Show one place you used it.
 
@@ -103,6 +106,7 @@ In this project, I used it to show an empty message when the stack has no techno
 )}
 
 If the stack is empty, it shows the empty message. Otherwise, it shows the selected technologies.
+---
 
 ## 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 
@@ -118,3 +122,4 @@ For example:
 />
 
 Here, technology sends data to the child, and onAdd lets the child call the parent's function when the user clicks Add to Stack.
+---
