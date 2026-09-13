@@ -60,7 +60,7 @@ const TechnologyGrid = () => {
                 <div className="mb-8">
                     <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
                         Explore the{" "}
-                        <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 bg-clip-text text-transparent">
+                        <span className="gradient-text">
                             Technologies
                         </span>
                     </h2>

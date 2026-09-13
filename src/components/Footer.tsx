@@ -4,15 +4,15 @@ const Footer = () => {
     return (
         <footer className="bg-white px-4 sm:px-6 lg:px-8">
 
-            {/* Top Divider */}
+            
             <div className="mx-auto max-w-7xl">
                 <div className="divider" />
             </div>
 
-            {/* Footer Main Content */}
+            
             <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 py-8 sm:py-10 lg:grid-cols-4 lg:gap-8">
 
-                {/* Logo / Description */}
+                
                 <div className="text-center lg:text-left">
 
                     <img
@@ -26,7 +26,7 @@ const Footer = () => {
                         building modern software.
                     </p>
 
-                    {/* Social Links */}
+                    
                     <div className="mt-5 flex justify-center gap-5 font-semibold text-gray-500 lg:justify-start">
 
                         <a
@@ -61,7 +61,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Product */}
+                
                 <div className="hidden lg:block">
 
                     <h2 className="mb-4 font-semibold uppercase text-gray-800">
@@ -100,7 +100,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                {/* Company */}
+                
                 <div className="hidden lg:block">
 
                     <h2 className="mb-4 font-semibold text-gray-800">
@@ -139,7 +139,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                {/* Legal */}
+                
                 <div className="hidden lg:block">
 
                     <h2 className="mb-4 font-semibold text-gray-800">
@@ -171,12 +171,12 @@ const Footer = () => {
 
             </div>
 
-            {/* Bottom Divider */}
+            
             <div className="mx-auto max-w-7xl">
                 <div className="divider" />
             </div>
 
-            {/* Footer Bottom */}
+            
             <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 py-4 text-center text-sm text-gray-500 sm:flex-row sm:text-left">
 
                 <p>

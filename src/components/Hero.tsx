@@ -11,7 +11,7 @@ const Hero = () => {
 
                     <h1 className="max-w-2xl text-4xl font-bold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
                         Build Your Ideal{" "}
-                        <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 bg-clip-text text-transparent">
+                       <span className="gradient-text">
                             Development Stack
                         </span>
 
@@ -27,7 +27,7 @@ const Hero = () => {
                     <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                         <a
                             href="#technologies"
-                            className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+                            className="gradient-theme inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-white shadow-md transition duration-300 hover:-translate-y-0.5 hover:shadow-lg"
                         >
                             Explore Technologies
                             <span className="ml-2">→</span>

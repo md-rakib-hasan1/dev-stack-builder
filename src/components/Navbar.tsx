@@ -7,10 +7,10 @@ const Navbar = () => {
     return (
         <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white">
 
-            {/* Main Navbar */}
+
             <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
-                {/* Mobile Hamburger */}
+
                 <button
                     type="button"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -20,14 +20,14 @@ const Navbar = () => {
                     {isMenuOpen ? "✕" : "☰"}
                 </button>
 
-                {/* Logo */}
+
                 <img
                     src={logo}
                     alt="Dev Stack Logo"
                     className="w-28 sm:w-32 md:w-36"
                 />
 
-                {/* Desktop Menu */}
+
                 <ul className="hidden items-center gap-6 md:flex">
                     <li>
                         <a
@@ -75,7 +75,7 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                {/* Auth Buttons */}
+
                 <div className="flex items-center gap-1 sm:gap-3">
                     <button className="text-sm font-medium text-gray-700 hover:text-pink-500">
                         Sign In
@@ -87,7 +87,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Menu */}
+
             {isMenuOpen && (
                 <div className="border-t border-slate-100 bg-white md:hidden">
                     <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
