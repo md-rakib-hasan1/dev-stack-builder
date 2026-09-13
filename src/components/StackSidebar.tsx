@@ -36,7 +36,7 @@ const StackSidebar = ({ stack, onRemove,
                         alt={`${technology.name} icon`}
                         className="h-7 w-7 object-contain"
                     />
-                    {/* Technology Info */}
+
                     <div className="min-w-0 flex-1">
                         <h3 className="truncate text-xs font-semibold text-slate-800">
                             {technology.name}
@@ -55,21 +55,21 @@ const StackSidebar = ({ stack, onRemove,
                         ✕
                     </button>
 
-                    
+
 
                 </div>))}
 
             </div>)}
 
             {stack.length > 0 && (
-                        <button
-                            type="button"
-                            onClick={onRemoveAll}
-                            className="mt-4 w-full rounded-md border border-red-200 px-3 py-2 text-xs font-medium text-red-500 transition hover:bg-red-50"
-                        >
-                            Remove All
-                        </button>
-                    )}
+                <button
+                    type="button"
+                    onClick={onRemoveAll}
+                    className="mt-4 w-full rounded-md border border-red-200 px-3 py-2 text-xs font-medium text-red-500 transition hover:bg-red-50"
+                >
+                    Remove All
+                </button>
+            )}
 
 
         </aside>

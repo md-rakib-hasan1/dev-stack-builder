@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import technologies from "../data/technologies.json";
 import type { Technology } from "../types/technology";
 import TechnologyCard from "./TechnologyCard";
@@ -7,6 +7,14 @@ import { toast } from "react-toastify";
 
 const TechnologyGrid = () => {
     const [stack, setStack] = useState<Technology[]>([]);
+    const [loading, setLoading] = useState<boolean>(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, []);
 
     const handleAddToStack = (technology: Technology) => {
         const alreadyAdded = stack.some(
@@ -48,7 +56,7 @@ const TechnologyGrid = () => {
         >
             <div className="mx-auto max-w-7xl">
 
-                {/* Section Heading */}
+
                 <div className="mb-8">
                     <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
                         Explore the{" "}
@@ -62,22 +70,36 @@ const TechnologyGrid = () => {
                     </p>
                 </div>
 
-                {/* Technologies and Stack */}
+
                 <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_260px]">
 
-                    {/* Technology Cards */}
+
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                        {technologies.map((technology) => (
-                            <TechnologyCard
-                                key={technology.id}
-                                technology={technology}
-                                onAdd={handleAddToStack}
-                                isAdded={stack.some((item) => item.id === technology.id)}
-                            />
-                        ))}
+                        {loading ? (
+                            <div className="col-span-full flex min-h-60 items-center justify-center">
+                                <div className="text-center">
+                                    <div className="mx-auto h-10 w-10 animate-spin rounded-full border-4 border-slate-200 border-t-pink-500"></div>
+
+                                    <p className="mt-4 text-sm text-slate-500">
+                                        Loading technologies...
+                                    </p>
+                                </div>
+                            </div>
+                        ) : (
+                            technologies.map((technology) => (
+                                <TechnologyCard
+                                    key={technology.id}
+                                    technology={technology}
+                                    onAdd={handleAddToStack}
+                                    isAdded={stack.some(
+                                        (item) => item.id === technology.id
+                                    )}
+                                />
+                            ))
+                        )}
                     </div>
 
-                    {/* Your Stack Sidebar */}
+
                     <StackSidebar
                         stack={stack}
                         onRemove={handleRemoveFromStack}
