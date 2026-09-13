@@ -9,7 +9,7 @@ const StackSidebar = ({ stack, onRemove,
     onRemoveAll, }: StackSidebarProps) => {
 
     return (
-        <aside className="h-fit rounded-xl border border-slate-200 bg-white p-4">
+        <aside className="h-fit rounded-xl border border-slate-200 bg-white p-4 lg:sticky lg:top-20">
 
 
             <div>
